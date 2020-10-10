@@ -11,4 +11,5 @@ class Devices(models.Model):
 class AsteroidRegistration(models.Model):
     date = models.DateTimeField()
     device = models.ForeignKey(Devices, on_delete=models.CASCADE)
-    matrix = models.CharField(max_length=200)
+    height = models.IntegerField()
+    width = models.IntegerField()

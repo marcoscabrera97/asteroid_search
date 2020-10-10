@@ -19,5 +19,6 @@ from upload_files import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('asteroids', include('asteroids.urls')),
     path('upload_files', include('upload_files.urls'))
 ]

@@ -1,0 +1,25 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<div class="container">
+    {% if asteroids %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Observatorio</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for asteroid in asteroids %}
+            <tr>
+                <td>{{asteroid.device.observatory.code}}</td>
+                <td>{{asteroid.date}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <div>NO EXISTEN RESULTADOS</div> {% endif %}
+    <a href="/asteroids" class="btn btn-primary">Inicio</a>
+</div>

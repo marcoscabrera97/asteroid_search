@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<div class="container">
+
+    <h1>BUSCADOR DE ASTEROIDES</h1>
+    <h4>Inserte el tamaño del asteroide:</h4>
+
+    <form action="asteroids/asteroids_list" method="get">
+        <label for="width">Ancho: </label>
+        <input id="width" type="number" name="width" required>
+        <label for="height">Alto: </label>
+        <input id="height" type="number" name="height" required>
+        <input type="submit" value="Buscar">
+    </form>
+</div>
