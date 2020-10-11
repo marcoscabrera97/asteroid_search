@@ -1,11 +1,14 @@
 # asteroid_search
 
 # Run project
-python manage.py runserver
+python asteroid_search/manage.py runserver
 
 ## Change Model Parameters
-python manage.py makemigrations
-python manage.py migrate
+python asteroid_search/manage.py makemigrations
+python asteroid_search/manage.py migrate
 
 ## Directory import files
-/import_files
+asteroid_search/import_files
+
+## Access to asteroids search
+<hostname>/asteroids
