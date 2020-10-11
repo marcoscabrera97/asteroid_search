@@ -4,7 +4,7 @@
 > python asteroid_search/manage.py runserver
 
 ## Change Model Parameters
-> python asteroid_search/manage.py makemigrations
+> python asteroid_search/manage.py makemigrations  
 > python asteroid_search/manage.py migrate
 
 ## Directory import files
