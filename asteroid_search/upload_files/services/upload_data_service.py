@@ -52,7 +52,7 @@ class UploadDataService(object):
     def check_files_not_upload(self):
         file_json = {}
         upload_files_object = UploadFiles.objects.all()
-        upload_files_path = settings.BASE_DIR + '/import_files/'
+        upload_files_path = settings.IMPORT_FILES
         upload_files = os.listdir(upload_files_path)
         for file_name in upload_files:
             if not UploadFiles.objects.filter(name=file_name).exists():
